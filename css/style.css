@@ -1,14 +1,30 @@
+/* DEFAULT RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* TYPO STYLES */
 html {
     font-size: 10px;
 }
 
+/* GENERAL */
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: black;
+}
 body {
+    background-color: #ccc;
     display: flex;
     flex-direction: column;
+    color: white;
+}
+
+header {
+    text-align: right;
+    padding: 5px 20px;
 }
