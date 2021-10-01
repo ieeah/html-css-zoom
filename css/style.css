@@ -10,21 +10,66 @@ html {
     font-size: 10px;
 }
 
-/* GENERAL */
+* {
+    font-family: 'Lato', sans-serif;
+}
 
+/* GENERAL */
+/* metto un contenitore centrale perché full screen non mi piace :p */
 .container {
     width: 70%;
     margin: 0 auto;
     background-color: black;
+}
+
+.btn {
+    padding: 5px 10px;
+    background: linear-gradient(0deg, #0b0b0b 0%, #444 50%);
+    border: none;
+    color: white;
+    border-radius: 7px;
+    margin-left: 3px;
 }
 body {
     background-color: #ccc;
     display: flex;
     flex-direction: column;
     color: white;
+    font-size: 1.8rem;
 }
 
 header {
     text-align: right;
-    padding: 5px 20px;
+    padding: 8px 15px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 3px;
+}
+
+li {
+    list-style: none;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    text-align: center;
+    position: relative;
+    margin-inline: 15px;
+}
+
+.arrow {
+    position: absolute;
+    left: 110%;
+    top: 20%;
+    font-weight: 100;
 }
