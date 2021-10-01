@@ -97,6 +97,7 @@ main li img {
 footer {
     display: flex;
     justify-content: space-between;
+    align-content: center;
 }
 
 li {
@@ -110,9 +111,13 @@ ul {
 .footer_menu li {
     text-align: center;
     position: relative;
-    margin-inline: 15px;
+    margin-inline: 10px;
     padding-block: 3px;
     text-transform: capitalize;
+}
+
+.footer_menu .icon {
+    font-size: 2.5rem;
 }
 
 .footer_menu li div {
@@ -121,7 +126,7 @@ ul {
 
 .arrow {
     position: absolute;
-    left: 80%;
+    left: 85%;
     top: 10px;
     font-weight: 100;
     border-radius: 4px;
