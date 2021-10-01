@@ -14,6 +14,26 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+/* UTILITIES */
+/* buttons */
+    .btn {
+        padding: 5px 10px;
+        background: linear-gradient(0deg, #222 0%, #323232 50%);
+        border: none;
+        color: white;
+        border-radius: 7px;
+        margin-left: 3px;
+    }
+
+    footer button.btn {
+        color: red;
+        background: rgba(255, 255, 255, 0.3);
+        padding: 0 10px;
+        font-size: 1.8rem;
+        border-radius: 0px;
+    }
+
+    /* spacing */
 /* GENERAL */
 /* metto un contenitore centrale perché full screen non mi piace :p */
 .container {
@@ -22,14 +42,8 @@ html {
     background-color: black;
 }
 
-.btn {
-    padding: 5px 10px;
-    background: linear-gradient(0deg, #0b0b0b 0%, #444 50%);
-    border: none;
-    color: white;
-    border-radius: 7px;
-    margin-left: 3px;
-}
+
+
 body {
     background-color: #ccc;
     display: flex;
@@ -50,7 +64,6 @@ main {
 footer {
     display: flex;
     justify-content: space-between;
-    padding-block: 3px;
 }
 
 li {
@@ -61,15 +74,32 @@ footer ul {
     display: flex;
 }
 
-footer ul li {
+.footer_menu li {
     text-align: center;
     position: relative;
     margin-inline: 15px;
+    padding-block: 3px;
+    text-transform: capitalize;
+}
+
+.footer_menu li div {
+    margin-top: 3px;
 }
 
 .arrow {
     position: absolute;
-    left: 110%;
-    top: 20%;
+    left: 80%;
+    top: 10px;
     font-weight: 100;
+    border-radius: 4px;
+    padding: 3px;
 }
+
+.arrow:hover {
+    background-color: #444;
+}
+
+.footer_menu li:hover i:not(.arrow){
+    color: #5af542;
+}
+
