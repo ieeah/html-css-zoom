@@ -38,7 +38,6 @@ html {
         cursor: pointer;
     }
 
-
 /* GENERAL */
 li {
     list-style: none;
@@ -54,27 +53,27 @@ body {
 }
 
 /* HEADER */
-
 header {
     text-align: right;
     padding: 8px 15px;
 }
 
 /* MAIN */
-
 main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     flex-grow: 1;
     padding: 5px;
+    overflow: auto;
+}
+
+main ul {
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 main ul li {
     width: 350px;
     height: 200px;
-    border: 2px solid transparent;
+    border: 4px solid transparent;
     position: relative;
 }
 
@@ -144,4 +143,3 @@ ul {
 .footer_menu li:hover i:not(.arrow){
     color: #5af542;
 }
-
